@@ -22,20 +22,20 @@ JSDefender has been providing professional-grade obfuscation and in-app protecti
 
 Our layered approach to JavaScript hardening provides multiple layers of protection for your application. Some of the elements we use to layer your application’s security include:
 
-* **Domain lock** binds your JavaScript source code to a specific domain or subdomain.
-* **Control flow protection** adds false conditional statements and misleading constructs to your code, creating spaghetti logic.
-* **Boolean literals** transforms the false and true literals into other expressions, resulting in the same false and true logic.
-* **Integer literals** transforms integer literals into less obvious expressions that result in the same value.
-* **Function reordering** moves functions from their original locations to another one in the same lexical scope, including randomization.
+* **Domain lock**: This binds your JavaScript source code to a specific domain or subdomain.
+* **Control flow protection**: JSDefender adds false conditional statements and misleading constructs to your code, creating spaghetti logic.
+* **Boolean literals**: This transforms the false and true literals into other expressions, resulting in the same false and true logic.
+* **Integer literals**: JSDefender transforms integer literals into less obvious expressions that result in the same value.
+* **Function reordering**: The program moves functions from their original locations to another one in the same lexical scope, including randomization.
 * **Tamper detection**: If JSDefender detects that an unauthorized party has been tampering with your code, it can shut down the application to protect it.
-* **Property indirection** transforms direct property access in your app's code to indirect property access.
-* **Date Lock** injects code to test if the current date is within an interval you set. If true, the code runs normally; if not, it can either exit or run a custom script.
-* **String literals** extracts literals into variables, replacing the original string with corresponding variables.
-* **Expression sequence obfuscation** collects adjacent expression statements in the code and combines them into a sequence that's harder to understand.
-* **Local declaration** mangles the name of local declarations so decompiling tools can't easily read them.
-* **Property parsing** turns literal expression assignments into multiple assignment statements so they're harder to parse out.
-* **Debugger removal** can detect when a user's browser has a debugger and can prevent the user from tampering with the code.
-* **Variable grouping** separates variable declarations and initializations, moving them to the end of the scope.
+* **Property indirection**: This transforms direct property access in your app's code to indirect property access.
+* **Date Lock**: This injects code to test if the current date is within an interval you set. If true, the code runs normally; if not, it can either exit or run a custom script.
+* **String literals**: JSDefender extracts literals into variables, replacing the original string with corresponding variables.
+* **Expression sequence obfuscation**: This collects adjacent expression statements in the code and combines them into a sequence that's harder to understand.
+* **Local declaration**: This mangles the name of local declarations so decompiling tools can't easily read them.
+* **Property parsing**: JSDefender turns literal expression assignments into multiple assignment statements so they're harder to parse out.
+* **Debugger removal**: JSDefender can detect when a user's browser has a debugger and can prevent the user from tampering with the code.
+* **Variable grouping**: This separates variable declarations and initializations, moving them to the end of the scope.
 
 ## Getting Started
 To get started using *PreEmptive Protection JSDefender*, [install and activate](intro_installation.html) JSDefender on your development machine, then see the Getting Started page.
